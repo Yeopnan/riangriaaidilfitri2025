@@ -3,7 +3,7 @@ body {
 }
 .gallery img {
   cursor: pointer;
-  width: 100%;
+  width: 120px;
   height: auto;
   border-radius: 8px;
   transition: transform 0.3s ease-in-out;
