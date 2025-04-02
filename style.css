@@ -1,16 +1,20 @@
-body {
-  background-color: #f8f9fa;
-}
-.gallery img {
-  cursor: pointer;
-  width: 120px;
+img {
+  width: 100%;
   height: auto;
   border-radius: 8px;
-  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  transition: transform 0.2s;
 }
-.gallery img:hover {
+img:hover {
   transform: scale(1.05);
 }
-.modal-content img {
-  width: 100%;
+#preview {
+  display: none;
+  text-align: center;
+  margin-top: 20px;
+}
+#preview img {
+  max-width: 80%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
