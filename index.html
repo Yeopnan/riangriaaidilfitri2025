@@ -2,46 +2,137 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Festive Photo Gallery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="Author" content="Yeopnan" />
+    <meta name="description" content="OfficialWebsiteU17SMKSek192025" />
+    <title>Takwim Latihan U17 Bola Sepak MSSD SMK Sek 19</title>
     <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="container text-center mt-4">
-      <h2>Festive Photo Gallery</h2>
+    <header>
+      <div class="logo text-center my-3">
+        <img
+          src="img/Logo_Sekolah_Menengah_Kebangsaan_Seksyen_19.png"
+          alt="smksek19"
+          width="200px"
+          class="img-fluid"
+        />
+        <h1>Galleri Aidilfitri 2025</h1>
+      </div>
+    </header>
+
+    <div class="nav-bar">
+      <ul>
+        <li><a href="index.html">Utama</a></li>
+        <li><a href="quater2.html">April-Jun</a></li>
+        <li style="float: right">
+          <a class="active" href="gallery.html">Galleri</a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- ✅ Responsive Image Gallery -->
+    <div class="container my-4">
       <div class="row">
-        <div class="col-4">
-          <img
-            src="img/WhatsApp Image 2025-04-02 at 06.41.33.jpeg"
-            alt="Festive 1"
-            onclick="viewImage(this)"
-          />
-        </div>
-        <div class="col-4">
-          <img src="img/nuar.jpeg" alt="Festive 2" onclick="viewImage(this)" />
-        </div>
-        <div class="col-4">
+        <div class="col-6 col-md-4 mb-3">
           <img
             src="img/pekanbaru.jpeg"
-            alt="Festive 3"
-            onclick="viewImage(this)"
+            alt="u17"
+            class="img-fluid rounded shadow"
           />
         </div>
-      </div>
-      <div id="preview">
-        <img id="previewImg" />
+        <div class="col-6 col-md-4 mb-3">
+          <img src="img/nuar.jpeg" alt="u17" class="img-fluid rounded shadow" />
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+          <img
+            src="img/WhatsApp Image 2025-03-31 at 10.45.08.jpeg"
+            alt="adib"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+          <img
+            src="img/WhatsApp Image 2025-03-31 at 13.46.17 (1).jpeg"
+            alt="acap"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+          <img
+            src="img/WhatsApp Image 2025-03-31 at 13.46.22.jpeg"
+            alt="busra"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+          <img
+            src="img/WhatsApp Image 2025-04-02 at 06.41.33.jpeg"
+            alt="busra"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+          <img
+            src="img/WhatsApp Image 2025-03-31 at 18.12.53.jpeg"
+            alt="busra"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+          <img
+            src="img/WhatsApp Image 2025-03-31 at 16.57.04.jpeg"
+            alt="busra"
+            class="img-fluid rounded shadow"
+          />
+        </div>
+        <div class="col-6 col-md-4 mb-3">
+          <img
+            src="img/WhatsApp Image 2025-03-31 at 13.46.22.jpeg"
+            alt="busra"
+            class="img-fluid rounded shadow"
+          />
+        </div>
       </div>
     </div>
 
+    <!-- Scroll to Top button -->
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
     <script>
-      function viewImage(img) {
-        document.getElementById("previewImg").src = img.src;
-        document.getElementById("preview").style.display = "block";
+      let mybutton = document.getElementById("myBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (
+          document.body.scrollTop > 20 ||
+          document.documentElement.scrollTop > 20
+        ) {
+          mybutton.style.display = "block";
+        } else {
+          mybutton.style.display = "none";
+        }
+      }
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
       }
     </script>
+
+    <footer class="text-center mt-4">
+      <small>Copyright © 2025 YEOPNAN FC. All Rights Reserved.</small>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
